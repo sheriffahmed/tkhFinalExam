@@ -38,8 +38,8 @@ angular.module("examApp.controllers", [])
     		.then(function(res){
     			$window.location.href = '/'
     			console.log("Updated")
-    		}), function(res){
+    		}, function(res){
     			console.log("Failure")
     		}
     	}
-    }
+    })
