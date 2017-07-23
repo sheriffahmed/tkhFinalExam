@@ -2,12 +2,16 @@
 
 <h2> I should be showing an editing form </h2>
 
-<div class="container">
-<form action="/edit?_method=put&id={{post._id}}" method="post">
-<input type="text" name="blogTitle" placeholder="Blog Title" value="{{post.title}}" />
+<div ng-controller="updateCtrl" ng-submit="editPost()">
+<form method="post">
+<input type="text" ng-model="post.name" name="postName" placeholder="Name"/>
 <br />
-<textarea rows="6" cols="25" name="postBody" placeholder="Blog Body">{{post.post}}</textarea>
+<input type="text" ng-model="post.age" name="postAge" placeholder="Age"/>
 <br />
-<input type="submit" value="Edit Post" />
+<input type="text" ng-model="post.occupation" name="postOccupation" placeholder="Occupation"/>
+<br />
+<input type="submit">
+
 </form>
+<button ng-click="deletePost()">Delete Post</button>
 </div>
