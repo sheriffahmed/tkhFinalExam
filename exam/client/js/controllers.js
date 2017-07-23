@@ -40,6 +40,6 @@ angular.module("examApp.controllers", [])
     			console.log("Updated")
     		}, function(res){
     			console.log("Failure")
-    		}
+    		})
     	}
     })
