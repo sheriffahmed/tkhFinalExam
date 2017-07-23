@@ -42,4 +42,4 @@ angular.module("examApp.controllers", [])
     			console.log("Failure")
     		}
     	}
-    })
+    }
